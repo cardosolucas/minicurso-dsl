@@ -1,0 +1,6 @@
+Model: commands*=Command;
+Command: Pipeline | Task | Workers;
+Pipeline: 'PIPELINE' symb=STRING;
+Task: 'TASK' name=STRING nbpath=STRING nbout=STRING pars*=Parameter;
+Workers: 'WORKERS' workers=INT;
+Parameter: name=STRING ',' arg=STRING;
